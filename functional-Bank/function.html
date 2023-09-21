@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional baper bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   
+    <h1 class="text-center text-3xl font-semibold mt-12">Functional <span class="text-indigo-800">Baper bank!!!!!!!!</span></h1>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-12">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-white text-3xl">Deposit</h4>
+                    <h2 class="text-white text-4xl">$ <span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-lg">
+                    <h4 class="text-white text-3xl">Withdraw</h4>
+                    <h2 class="text-white text-4xl">$ <span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h4 class="text-white text-3xl">Blance</h4>
+                    <h2 class="text-white text-4xl">$ <span id="Blance-total">1200</span></h2>
+                </div> 
+            </div>
+        </section>
+         <!-- depostid and width section  -->
+         <div class="div grid grid-cols-2 gap-4 w-9/12 mx-auto mt-5">
+            <div class="bg-purple-900 p-8 rounded-lg">
+                <h4 class="text-white text-3xl">Deposit</h4>
+                <input class="block p-4 w-9/12 rounded-lg mt-5" type="text" name="" id="input-deposit" placeholder="$ you want to deposit">
+                <button id="btn-deposit" class="bg-yellow-400 px-4 py-3 mt-5 text-white font-semibold rounded-lg  hover:bg-violet-600">Deposit</button>
+            </div>
+            <div class="bg-purple-400 p-8 rounded-lg">
+                <h4 class="text-white text-3xl">Withdraw</h4>
+                <input class="block w-9/12 p-4 rounded-lg mt-5" type="text" name="" id="withdraw-field" placeholder="$ you want to Withdraw">
+                <button id="btn-withdraw" class="bg-yellow-400 px-4 py-3 mt-5 text-white font-semibold rounded-lg  hover:bg-violet-600">Withdraw</button>
+            </div>
+         </div>
+    </main>
+    <script src="function.js"></script>
+</body>
+</html>
